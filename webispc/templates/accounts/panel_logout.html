@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Panel de Logout
+{% endblock title%}
+
+<h1>Logout</h1>
+
+
+
+{% block contenido %}
+<br>
+<div class="d-grid gap-2">
+    <a class="btn btn-primary" href={% url 'index' %}>Inicio</a>
+    </div> 
+<center>
+<p><h1>Has Cerrado sesion</h1></p>
+
+ <p><h3>Debes volver a ingresar Para utilizar Funcionalidades del BLOG</h3>
+
+
+
+<img src="https://static.vecteezy.com/system/resources/previews/000/376/226/non_2x/technical-support-seo-line-icons-vector.jpg" alt="" width="600" height="500" class="d-inline-block align-text-top">
+<div class="d-grid gap-2">
+    <a class="btn btn-danger" href={% url 'panel-login' %}>Ingresar</a>
+    </div> 
+
+{% endblock contenido %}

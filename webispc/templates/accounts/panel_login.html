@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Panel de Login
+{% endblock title%}
+
+{% block contenido %}
+<br>
+<br>
+<div class="d-grid gap-2">
+    <a class="btn btn-primary" href={% url 'panel-signup' %}>Crear Cuenta</a>
+    </div> 
+
+
+<br>
+<div class="p-3 mb-2 bg-dark text-white">
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Ingresar</button>
+</form>
+
+
+
+{% endblock contenido %}
